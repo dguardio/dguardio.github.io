@@ -30,7 +30,14 @@
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72.png">
         <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57.png">
         <link rel="shortcut icon" href="images/ico/favicon.ico">
-        <script src="//static.miniclipcdn.com/js/game-embed.js"></script>
+
+        <style type="text/css">
+        .toggle{
+            display: none;
+            transform: scale(0);
+            transition: all 3s ease-in-out 0.5s;
+        }
+        </style>
     </head>
     
     <body>
@@ -514,10 +521,12 @@
             <div class="triangle"></div>
             <div class="container centered">
                 <p class="large-text">Beautiful things never seek attention. Their beauty speaks enough on its own.</p>
-                <a href="#" class="button">Check out beauty!</a>
+                <span id="run" href="#" class="button">Check out beauty!</span>
             </div>
         </div>
-        
+
+        <div id="game" class="toggle" align="center"><object width="640" height="480"><param name="movie" value="http://www.embeddablegames.net/embedgames/poll.swf"><param name="quality" value="high"><embed src="http://www.embeddablegames.net/embedgames/poll.swf" quality="high" width="640" height="400" type="application/x-shockwave-flash" pluginspage= "http://www.macromedia.com/go/getflashplayer"></embed></object><br/><a href="http://www.knugo.com">Credit to <strong>knugo.com</strong></a></div>
+<p>
         <!-- Price section start -->
         <div id="price" class="section secondary-section">
             <div class="container">
@@ -703,5 +712,15 @@
             <script src="js/respond.min.js"></script>
         <![endif]-->
         <script type="text/javascript" src="js/app.js"></script>
+        
+
+
+        <script type="text/javascript">
+
+            $("#run").click(function(){
+                $("#game").toggleClass('toggle');
+            })
+
+        </script>
     </body>
 </html>

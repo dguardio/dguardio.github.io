@@ -416,8 +416,8 @@ p {
     height:60px;
 }
 .service img {
-    width:150px;
-    height:150px;
+    max-width:150px;
+    max-height:150px;
 }
 /*
 3.2 Portfolio

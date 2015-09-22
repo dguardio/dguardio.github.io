@@ -374,7 +374,8 @@ p {
     color:#FFF;
 }
 .secondary-section {
-    background:#FECE1A;
+    background: rgba(0,0,0,0);
+    
 }
 .secondary-section .title {
     border-bottom: 1px solid #181A1C;
